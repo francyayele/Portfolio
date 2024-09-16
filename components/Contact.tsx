@@ -15,7 +15,7 @@ const Contact = () => {
         Feel free to reach out if you have any questions or just want to say hello&mdash;I will do my best to respond!
       </p>
 
-      <a href="mailto:noor.jsdivs@gmail.com">
+      <a href="mailto:francyayele@gmail.com">
         <button className="w-40 h-14 border border-textGreen mt-6 font-titleFont text-sm text-textGreen tracking-wider rounded-md hover:bg-hoverColor duration-300">
           Say Hello
         </button>
