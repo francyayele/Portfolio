@@ -312,7 +312,7 @@ const Navbar = () => {
                 className="text-sm w-72 tracking-widest text-textGreen text-center mt-4"
                 href="mailto:francyayele@gmail.com"
               >
-                <p>F R A N S I  A Y E L E</p>
+                <p>F R A N S I   A Y E L E</p>
               </motion.a>
             </motion.div>
           </div>
