@@ -155,6 +155,9 @@ const Projects = () => {
                 Featured Project
               </p>
               <h3 className="text-2xl font-bold">AI Chatbot</h3>
+              <p className="font-titleFont text-textGreen text-sm tracking-wide">
+               Ongoing
+              </p>
             </div>
             <p className="text-sm md:text-base bg-[#112240] p-2 md:p-6 rounded-md">
             An AI chatbot system uses natural language processing to understand and respond to user queries, providing real-time
