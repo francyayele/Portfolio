@@ -124,7 +124,7 @@ const Projects = () => {
               </a>
               <a
                 className="hover:text-textGreen duration-300"
-                href="\assets\plant disease detection. IETP79.docx"
+                href="\assets\plant disease detection system.pdf"
                 target="_blank"
               >
                 <RxOpenInNewWindow />
