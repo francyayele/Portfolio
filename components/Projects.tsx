@@ -14,7 +14,7 @@ const Projects = () => {
         <div className="flex flex-col xl:flex-row gap-6">
           <a
             className="w-full xl:w-1/2 h-auto relative group"
-            href="https://github.com/francyayele/Brain-Tumor-Detection-and-Classification-System"
+            href="https://github.com/francyayele/Brain-tumor-detection-system-using-deep-learning-technique.git"
             target="_blank"
           >
             <div>
