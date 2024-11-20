@@ -49,7 +49,7 @@ const Projects = () => {
             <div className="text-2xl flex gap-4">
               <a
                 className="hover:text-textGreen duration-300"
-                href="https://github.com/francyayele/Brain-tumor-detection-system-using-deep-learning-technique.git"
+                href="https://github.com/francyayele/Brain-tumor-detection-system-using-deep-learning-technique"
                 target="_blank"
               >
                 <TbBrandGithub />
@@ -76,7 +76,7 @@ const Projects = () => {
         <div className="flex flex-col xl:flex-row-reverse gap-6">
           <a
             className="w-full xl:w-1/2 h-auto relative group"
-            href="https://www.noormohmmad.com/"
+            href="https://github.com/francyayele/Plant-Detection-using-machine-learning.git"
             target="_blank"
           >
             <div>
