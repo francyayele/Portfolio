@@ -49,7 +49,7 @@ const Projects = () => {
             <div className="text-2xl flex gap-4">
               <a
                 className="hover:text-textGreen duration-300"
-                href="https://github.com/francyayele/Brain-Tumor-Detection-and-Classification-System.git"
+                href="https://github.com/francyayele/Brain-tumor-detection-system-using-deep-learning-technique.git"
                 target="_blank"
               >
                 <TbBrandGithub />
