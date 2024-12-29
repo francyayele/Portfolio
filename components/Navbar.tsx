@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { TbBrandGithub } from "react-icons/tb";
 import { SlSocialYoutube } from "react-icons/sl";
+import { TbBrandUpwork } from "react-icons/tb";
 import {
   SlSocialLinkedin,
   SlSocialFacebook,
@@ -284,11 +285,11 @@ const Navbar = () => {
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.95, ease: "easeIn" }}
-                    href="https://www.facebook.com/francy.ayele?mibextid=ZbWKwL"
+                    href="https://www.upwork.com/freelancers/~017b7e3b38b4cf7285?mp_source=share"
                     target="_blank"
                   >
                     <span className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
-                      <SlSocialFacebook />
+                      <TbBrandUpwork />
                     </span>
                   </motion.a>
                   <motion.a
@@ -312,7 +313,7 @@ const Navbar = () => {
                 className="text-sm w-72 tracking-widest text-textGreen text-center mt-4"
                 href="mailto:francyayele@gmail.com"
               >
-                <p>F R A N S I   A Y E L E</p>
+                <p>F R A N S I  A Y E L E</p>
               </motion.a>
             </motion.div>
           </div>
