@@ -1,8 +1,7 @@
-import { TbBrandGithub } from "react-icons/tb";
+import { TbBrandGithub, TbBrandUpwork } from "react-icons/tb";
 import { SlSocialYoutube } from "react-icons/sl";
 import {
   SlSocialLinkedin,
-  SlSocialFacebook,
   SlSocialInstagram,
 } from "react-icons/sl";
 
@@ -31,9 +30,9 @@ const LeftSide = () => {
             <SlSocialLinkedin />
           </span>
         </a>
-        <a href="https://www.facebook.com/francy.ayele?mibextid=ZbWKwL" target="_blank">
+        <a href="https://www.upwork.com/freelancers/~01c12e516ee1d8af84" target="_blank">
           <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
-            <SlSocialFacebook />
+            <TbBrandUpwork />
           </span>
         </a>
         <a href="https://www.instagram.com/francy_ayele?igsh=ZXFjamQ3ZXJrbmMw" target="_blank">

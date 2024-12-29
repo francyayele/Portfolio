@@ -10,6 +10,7 @@ import RightSide from "@/components/RightSide";
 import Head from "next/head";
 import { motion } from "framer-motion";
 import Archive from "@/components/Archive";
+import { FadeUp, FadeIn, ScaleUp } from "@/components/ScrollAnimation";
 
 export default function Home() {
   return (
@@ -24,26 +25,40 @@ export default function Home() {
         <Navbar />
         <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between">
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.5 }}
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1.5, duration: 0.5 }}
             className="hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0"
           >
             <LeftSide />
           </motion.div>
           <div className="h-[88vh] mx-auto p-4">
-            <Banner />
-            <About />
-            <Experience />
-            <Projects />
-            <Archive />
-            <Contact />
-            <Footer />
+            <FadeIn>
+              <Banner />
+            </FadeIn>
+            <FadeUp>
+              <About />
+            </FadeUp>
+            <ScaleUp>
+              <Experience />
+            </ScaleUp>
+            <FadeUp>
+              <Projects />
+            </FadeUp>
+            <ScaleUp>
+              <Archive />
+            </ScaleUp>
+            <FadeUp>
+              <Contact />
+            </FadeUp>
+            <FadeIn>
+              <Footer />
+            </FadeIn>
           </div>
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.5 }}
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1.5, duration: 0.5 }}
             className="hidden xl:inline-flex w-32 h-full fixed right-0 bottom-0"
           >
             <RightSide />

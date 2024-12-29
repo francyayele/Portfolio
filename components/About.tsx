@@ -13,19 +13,10 @@ const About = () => {
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
           <p>
-          I am a dedicated computer engineer with a strong focus on artificial intelligence and machine learning.
-           During my internship at Sync Intern, I gained hands-on experience in developing machine learning models 
-           and working on real-world AI applications. I also worked on innovative projects in healthcare AI, including 
-            <span className="text-textGreen"> brain tumor detection and medical image segmentation.</span>
-            
-          </p>
-          <p>
-          My experience extends to natural language processing 
-            (NLP), where I created sentiment analysis models for real-time customer feedback analysis. With a passion for
-             research, I aim to explore new AI technologies and contribute to impactful advancements, with the goal of making
-              significant contributions to the field.{" "}
-          
-           
+          A creative and results-driven Machine Learning Engineer passionate about transforming data 
+          into meaningful insights and solutions. Skilled in crafting intelligent models, integrating AI into 
+          user-friendly applications, and solving complex challenges across industries. Always exploring the 
+           forefront of technology to drive innovation and make a tangible impact.
           </p>
          
           <p>Here are a few technologies I have been working with recently:</p>

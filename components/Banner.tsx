@@ -11,7 +11,7 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.6 }}
         className="text-lg font-titleFont tracking-wide text-textGreen"
       >
-        Hi, my name is
+        Hi, this is
       </motion.h3>
       <motion.h1
         initial={{ y: 10, opacity: 0 }}
@@ -19,9 +19,9 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-4xl lgl:text-6xl font-titleFont font-semibold flex flex-col"
       >
-        Fransi Ayele.
+        Fransi M.
         <span className="text-textDark mt-2 lgl:mt-4">
-          I am a Machine Learning Engineer.
+          A Machine Learning Engineer.
         </span>
       </motion.h1>
       <motion.p
@@ -30,7 +30,9 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.8 }}
         className="text-base md:max-w-[650px] text-textDark font-medium"
       >
-        A passionate Machine Learning Engineer with a strong foundation in artificial intelligence, deep learning, and data science. Experienced in developing and deploying innovative solutions for real-world challenges..{" "}
+        Driven by a passion for innovation, I specialize in building and deploying advanced AI solutions that tackle real-world challenges. With a solid foundation in artificial intelligence, deep learning, and data science, I have successfully contributed to impactful projects in areas like healthcare, computer vision, and natural language processing.
+
+<br />✨ Let’s create the future together...{" "}
         <a href="https://www.linkedin.com/in/fransi-mengesha?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BhpVBDOXPQrmbTK22dAs0pw%3D%3D" target="_blank">
           {" "}
           <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-x-hidden group">
