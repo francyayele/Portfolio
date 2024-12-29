@@ -21,7 +21,7 @@ const Banner = () => {
       >
         Fransi Ayele.
         <span className="text-textDark mt-2 lgl:mt-4">
-          I am a Computer Engineer.
+          I am a Machine Learning Engineer.
         </span>
       </motion.h1>
       <motion.p
@@ -30,8 +30,7 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.8 }}
         className="text-base md:max-w-[650px] text-textDark font-medium"
       >
-        I am a Computer Engineer passionate about AI and machine learning, 
-        with experience in healthcare AI and NLP projects. My goal is to advance research and contribute to innovations in the field of AI..{" "}
+        A passionate Machine Learning Engineer with a strong foundation in artificial intelligence, deep learning, and data science. Experienced in developing and deploying innovative solutions for real-world challenges..{" "}
         <a href="https://www.linkedin.com/in/fransi-mengesha?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BhpVBDOXPQrmbTK22dAs0pw%3D%3D" target="_blank">
           {" "}
           <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-x-hidden group">
