@@ -4,20 +4,42 @@ import { AiOutlineYoutube } from "react-icons/ai";
 import { TbBrandGithub } from "react-icons/tb";
 import SectionTitle from "./SectionTitle";
 import { RxOpenInNewWindow } from "react-icons/rx";
+import { useState } from "react";
+import { IoMdClose } from "react-icons/io";
 
 const Projects = () => {
+  const [showVideo, setShowVideo] = useState(false);
+
   return (
     <section id="project" className="max-w-container mx-auto lgl:px-20 py-24">
       <SectionTitle title="Some Things I have Built" titleNo="03" />
+      {/* Video Modal */}
+      {showVideo && (
+        <div className="fixed top-0 left-0 w-full h-full bg-black/60 z-50 flex items-center justify-center">
+          <div className="relative w-[90%] max-w-4xl">
+            <button
+              onClick={() => setShowVideo(false)}
+              className="absolute -top-8 right-0 text-white text-2xl hover:text-textGreen"
+            >
+              <IoMdClose />
+            </button>
+            <video
+              className="w-full rounded-lg"
+              src="/assets/images/BTD upworkk.mp4"
+              controls
+              autoPlay
+            />
+          </div>
+        </div>
+      )}
       {/* ============ project One Start here ================ */}
       <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
         <div className="flex flex-col xl:flex-row gap-6">
-          <a
-            className="w-full xl:w-1/2 h-auto relative group"
-            href="https://github.com/francyayele/Brain-tumor-detection-system-using-deep-learning-technique.git"
-            target="_blank"
-          >
-            <div>
+          <div className="w-full xl:w-1/2 h-auto relative group">
+            <div
+              onClick={() => setShowVideo(true)}
+              className="cursor-pointer"
+            >
               <video
                 className="w-full h-full object-contain"
                 src="/assets/images/BTD upworkk.mp4"
@@ -25,7 +47,7 @@ const Projects = () => {
               />
               <div className="absolute w-full h-full bg-textGreen/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
             </div>
-          </a>
+          </div>
           <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10">
             <div>
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
@@ -53,13 +75,6 @@ const Projects = () => {
                 target="_blank"
               >
                 <TbBrandGithub />
-              </a>
-              <a
-                className="hover:text-textGreen duration-300"
-                href="\assets\BTD .mp4"
-                target="_blank"
-              >
-                <AiOutlineYoutube />
               </a>
               <a
                 className="hover:text-textGreen duration-300"
