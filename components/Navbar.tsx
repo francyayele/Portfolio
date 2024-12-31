@@ -128,7 +128,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
           </ul>
-          <a href="C:\Users\Hello\OneDrive\Documents\Projects\Portfolio\public\assets\Resume.pdf" target="_blank">
+          <a href="public\assets\Resume.pdf" target="_blank">
             <motion.button
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -237,7 +237,7 @@ const Navbar = () => {
                     </motion.li>
                   </Link>
                 </ul>
-                <a href="C:\Users\Hello\OneDrive\Documents\Projects\Portfolio\public\assets\Resume.pdf" target="_blank">
+                <a href="public\assets\Resume.pdf" target="_blank">
                   <motion.button
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
