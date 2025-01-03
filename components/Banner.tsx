@@ -52,7 +52,7 @@ const Banner = () => {
         >
           Driven by a passion for innovation, I specialize in building and deploying advanced AI solutions that tackle real-world challenges. With a solid foundation in artificial intelligence, deep learning, and data science, I have successfully contributed to impactful projects in areas like healthcare, computer vision, and natural language processing.
 
-          <br />✨ Let's create the future together...{" "}
+          <br />✨ Let&apos;s create the future together...{" "}
           <a href="https://www.linkedin.com/in/fransi-mengesha?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BhpVBDOXPQrmbTK22dAs0pw%3D%3D" target="_blank">
             {" "}
             <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-x-hidden group">
