@@ -171,13 +171,13 @@ const Navbar = () => {
           <div
             ref={(node) => (ref.current = node)}
             onClick={handleClick}
-            className="absolute mdl:hidden top-0 right-0 w-full h-screen bg-black/40 backdrop-blur-2xl flex flex-col items-end"
+            className="absolute mdl:hidden top-0 right-0 w-full h-screen  bg-black bg-opacity-50 flex flex-col items-end"
           >
             <motion.div
               initial={{ x: 20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.1 }}
-              className="w-[80%] h-full overflow-y-scroll scrollbarHide bg-[#112240]/75 backdrop-blur-[100px] flex flex-col items-center px-4 py-10 relative border-l border-l-textGreen/20"
+              className="w-[80%] h-full overflow-y-scroll scrollbarHide bg-[#112240] flex flex-col items-center px-4 py-10 relative"
             >
               <MdOutlineClose
                 onClick={() => setShow(false)}
