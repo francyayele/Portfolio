@@ -1,6 +1,33 @@
-import { motion } from "framer-motion";
+import { motion, useAnimationControls } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const Banner = () => {
+  const [text, setText] = useState("");
+  const fullText = "A Machine Learning Engineer";
+  const [index, setIndex] = useState(0);
+  const controls = useAnimationControls();
+
+  useEffect(() => {
+    if (index < fullText.length) {
+      const timeout = setTimeout(() => {
+        setText((prev) => prev + fullText[index]);
+        setIndex((prev) => prev + 1);
+      }, 200); // Slower typing speed (200ms per character)
+
+      return () => clearTimeout(timeout);
+    } else {
+      // Start flashing animation when typing is complete
+      controls.start({
+        opacity: [1, 0.5, 1],
+        transition: {
+          duration: 2,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }
+      });
+    }
+  }, [index, controls]);
+
   return (
     <section
       id="home"
@@ -40,9 +67,19 @@ const Banner = () => {
           className="text-4xl lgl:text-6xl font-titleFont font-semibold flex flex-col"
         >
           Fransi M.
-          <span className="text-textDark mt-2 lgl:mt-4">
-            A Machine Learning Engineer.
-          </span>
+          <motion.div 
+            className="text-textDark mt-2 lgl:mt-4 flex items-center"
+            animate={controls}
+          >
+            {text}
+            <motion.span
+              animate={{ opacity: [1, 0] }}
+              transition={{ duration: 0.5, repeat: Infinity, repeatType: "reverse" }}
+              className="inline-block ml-1 w-[3px] h-7 bg-textGreen"
+            >
+              |
+            </motion.span>
+          </motion.div>
         </motion.h1>
         <motion.p
           initial={{ y: 10, opacity: 0 }}

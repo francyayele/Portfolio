@@ -76,13 +76,7 @@ const Projects = () => {
               >
                 <TbBrandGithub />
               </a>
-              <a
-                className="hover:text-textGreen duration-300"
-                href="\assets\BSc project report final doc.pdf"
-                target="_blank"
-              >
-                <RxOpenInNewWindow />
-              </a>
+            
             </div>
           </div>
         </div>
@@ -130,20 +124,10 @@ const Projects = () => {
               >
                 <TbBrandGithub />
               </a>
-              <a
-                className="hover:text-textGreen duration-300"
-                href="\assets\PDD.mp4"
-                target="_blank"
-              >
-                <AiOutlineYoutube />
-              </a>
-              <a
-                className="hover:text-textGreen duration-300"
-                href="\assets\plant disease detection system.pdf"
-                target="_blank"
-              >
-                <RxOpenInNewWindow />
-              </a>
+             
+                
+          
+             
             </div>
           </div>
         </div>
