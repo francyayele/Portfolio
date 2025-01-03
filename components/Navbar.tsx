@@ -41,16 +41,35 @@ const Navbar = () => {
     }
   }
   return (
-    <div className="w-full shadow-navbarShadow h-20 lg:h-[12vh] sticky top-0 z-50 bg-bodyColor px-4">
+    <div className="w-full h-20 lg:h-[12vh] sticky top-0 z-50 px-4 backdrop-blur-md bg-bodyColor/80 border-b border-b-slate-600/20">
       <div className="max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between ">
         {/* ============ Logo Start here ============ */}
         <Link href="/">
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.1 }}
+            animate={{
+              opacity: 1,
+              rotate: [0, -10, 10, -10, 0],
+              scale: [1, 1.1, 0.9, 1.1, 1],
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut",
+            }}
+            whileHover={{
+              scale: 1.2,
+              rotate: [0, -15, 15, -15, 0],
+              transition: { duration: 0.5 },
+            }}
+            className="group"
           >
-            <Image className="w-14" src={logo} alt="logo" />
+            <Image
+              className="w-14 group-hover:shadow-lg group-hover:shadow-textGreen/50 rounded-full transition-all duration-300"
+              src={logo}
+              alt="logo"
+            />
           </motion.div>
         </Link>
         {/* ============ Logo End here ============== */}

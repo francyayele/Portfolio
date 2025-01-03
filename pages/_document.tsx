@@ -9,9 +9,17 @@ export default function Document() {
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
-        ></link>
+        />
+        <meta name="theme-color" content="#0A192F" />
+        <style>
+          {`
+            body {
+              background-color: #0A192F;
+            }
+          `}
+        </style>
       </Head>
-      <body>
+      <body className="bg-bodyColor">
         <Main />
         <NextScript />
       </body>

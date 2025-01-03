@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <section
       id="home"
-      className="relative w-full h-[100vh] flex flex-col items-center justify-center bg-[#0A192F] pl-0 md:pl-24"
+      className="max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8 relative"
     >
       {/* Video Background */}
       <div className="absolute top-0 left-[60%] -translate-x-1/2 w-[85%] md:w-[75%] lg:w-[70%] xl:w-[65%] h-full overflow-hidden">
@@ -24,7 +24,7 @@ const Banner = () => {
       </div>
       
       {/* Main Content */}
-      <div className="w-[85%] md:w-[75%] lg:w-[70%] xl:w-[65%] mx-auto flex flex-col gap-4 lgl:gap-8 items-start justify-center z-10">
+      <div className="w-full lgl:w-2/3 flex flex-col gap-4 lgl:gap-8 items-start justify-center z-10">
         <motion.h3
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -48,18 +48,22 @@ const Banner = () => {
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.8 }}
-          className="text-base md:max-w-[650px] text-textDark font-medium"
+          className="text-base text-textDark font-medium flex flex-col gap-4 max-w-[650px]"
         >
-          Driven by a passion for innovation, I specialize in building and deploying advanced AI solutions that tackle real-world challenges. With a solid foundation in artificial intelligence, deep learning, and data science, I have successfully contributed to impactful projects in areas like healthcare, computer vision, and natural language processing.
+          <span>
+            Driven by a passion for innovation, I specialize in building and deploying advanced AI solutions that tackle real-world challenges. With a solid foundation in artificial intelligence, deep learning, and data science, I have successfully contributed to impactful projects in areas like healthcare, computer vision, and natural language processing.
+          </span>
 
-          <br />✨ Let&apos;s create the future together...{" "}
-          <a href="https://www.linkedin.com/in/fransi-mengesha?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BhpVBDOXPQrmbTK22dAs0pw%3D%3D" target="_blank">
-            {" "}
-            <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-x-hidden group">
-              Learn more
-              <span className="absolute w-full h-[1px] bg-textGreen left-0 bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
-            </span>
-          </a>
+          <span>
+            ✨ Let&apos;s create the future together...{" "}
+            <a href="https://www.linkedin.com/in/fransi-mengesha?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BhpVBDOXPQrmbTK22dAs0pw%3D%3D" target="_blank">
+              {" "}
+              <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-x-hidden group">
+                Learn more
+                <span className="absolute w-full h-[1px] bg-textGreen left-0 bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
+              </span>
+            </a>
+          </span>
         </motion.p>
         <a href="https://github.com/francyayele" target="_blank">
           <motion.button
